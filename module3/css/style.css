@@ -1,0 +1,158 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: skyblue;
+    font-family: "Comic Sans MS", serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: snow;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.navbar-brand {}
+
+.navbar-brand h1 { /* Restaurant name */
+    font-family: "Comic Sans MS", serif;
+    color: steelblue;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    text-align: left;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#nav-list a {
+    color: aliceblue;
+    text-align: center;
+    border: 1px solid black;
+
+}
+#nav-list a.chicken_colour {
+    background: cornflowerblue;
+}
+#nav-list a.beef_colour {
+    background: royalblue;
+}
+
+#nav-list a.sushi_colour {
+    background: steelblue;
+}
+
+#nav-list a:hover {
+    background: darkblue;
+    color: snow;
+    border: 1px solid black; /* On mouse hover */
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    background: midnightblue;
+    border: 1px solid cornflowerblue;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -40px;
+}
+
+.background_colour {
+    background: #23527c;
+    padding: 5px 20px 20px 20px;
+    border: 2px solid black;
+}
+
+h2 {
+    margin-top: 0;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 1px #222;
+}
+
+.font_size {
+    font-size: .90em;
+}
+
+.someflava {
+    text-decoration: underline;
+    color: palevioletred;
+}
+
+/* On mouse hover */
+a:hover {
+
+    text-decoration: underline;
+}
+.someflava:hover {
+
+    color: mediumvioletred;
+}
+
+/*.container .jumbotron {*/
+/*    box-shadow: 1px 1px 5px #3F0C1F;*/
+/*    border: 2px solid #3F0C1F;*/
+/*}*/
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container .jumbotron {}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 15px;
+        height: 50px;
+    }
+
+    .navbar-brand h1 { /* Restaurant name */
+        /*padding-top: 10px;*/
+        /*font-size: 5vw;*/ /* 1vw = 1% of viewport width */
+    }
+
+    #collapsable-nav a { /* Collapsed nav menu text */
+        font-size: 1.2em;
+    }
+
+    #collapsable-nav a span { /* Collapsed nav menu*/
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    .container .jumbotron {
+        margin-top: 30px;
+    }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+    /* Header */
+    .navbar-brand h1 { /* Restaurant name */
+        padding-top: 5px;
+    }
+}
